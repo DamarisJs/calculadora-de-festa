@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Calculadora de festas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-logo-titulo">
+            <div class="logo">
+                <img src="./Imagens/calculadora.jpg" alt="imagem de calculadora">
+            </div>
+            <div class="texto">
+                <h1>Calculadora <span class="complemento">de Festas</span>
+                 
+                <h3>Acerte na quantidade de comida e bebida que irá servir em sua festa.
+                    <br> Utilize a nossa calculadora e garanta o sucesso da sua comemoração.
+                </h3>
+            </div>
+        </div>
+<br>
+        <svg width="100%" height="30" viewBox="450 0 440 60">
+            <g>
+                <path d="M0,30 Q30,0 60,30 T120,30 T180,30 T240,30" stroke="#f7d57e" fill="transparent" stroke-width="5"
+                    stroke-linecap="round" />
+                <path d="M240,30 Q270,0 300,30 T360,30 T420,30 T480,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+                <path d="M480,30 Q510,0 540,30 T600,30 T660,30 T720,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+                <path d="M720,30 Q750,0 780,30 T840,30 T900,30 T960,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+                <path d="M960,30 Q990,0 1020,30 T1080,30 T1140,30 T1200,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+                <path d="M1200,30 Q1230,0 1260,30 T1320,30 T1380,30 T1440,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+            </g>
+        </svg>
+
+        <br>
+
+        <h2>Número de convidados</h2>
+
+        <br>
+
+        <div class="grupo">
+            <div class="criancas">
+                <label for="numeroConvidadosCriancas">
+                    <img src="Imagens/icon_calc_criancas.png" height="60">
+                    <br>
+                    <span>Crianças</span>
+                </label>
+                <input id="numeroConvidadosCriancas" type="number" placeholder="Quantidade">
+            </div>
+
+            <div class="adultos">
+                <label for="numeroConvidadosCriancas">
+                    <img src="Imagens/icon_calc_adultos.png" height="60">
+                    <br>
+                    <span>Adultos</span>
+                </label>
+                <input id="numeroConvidadosAdultos" type="number" placeholder="Quantidade">
+            </div>
+        </div>
+
+
+        <br>
+        <svg width="100%" height="30" viewBox="450 0 440 60">
+            <g>
+                <path d="M0,30 Q30,0 60,30 T120,30 T180,30 T240,30" stroke="#f7d57e" fill="transparent" stroke-width="5"
+                    stroke-linecap="round" />
+                <path d="M240,30 Q270,0 300,30 T360,30 T420,30 T480,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+                <path d="M480,30 Q510,0 540,30 T600,30 T660,30 T720,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+                <path d="M720,30 Q750,0 780,30 T840,30 T900,30 T960,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+                <path d="M960,30 Q990,0 1020,30 T1080,30 T1140,30 T1200,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+                <path d="M1200,30 Q1230,0 1260,30 T1320,30 T1380,30 T1440,30" stroke="#f7d57e" fill="transparent"
+                    stroke-width="5" stroke-linecap="round" />
+            </g>
+        </svg>
+        <br>
+        <div class="cardapio">
+            <div class="cardapio-texto">
+                <h2>Escolha o cardápio da festa</h2>
+                <br>
+                <h3>Selecione os alimentos e bebidas que deseja servir em sua festa,<br>
+                    para cada combinação de itens, um cálculo diferente será realizado.</h3>
+            </div>
+
+            <div class="principal-card">
+                <div class="card-body">
+                    <img src="./Imagens/salgados.png">
+                    <span class="salgados">Salgados</span>
+                    <div>
+                        <input id="qtdSalgados" name="qtdSalgados"  placeholder="Quantidade">
+
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <img src="./Imagens/doces.png">
+                    <span class="doces">Doces</span>
+                    <div>
+                        <input id="qtdDoces" name="qtdDoces"  placeholder="Quantidade">
+
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <img src="./Imagens/bolos.png">
+                    <span class="bolo">Bolo</span>
+                    <div>
+                        <input id="qtdBolo" name="qtdBolo"  placeholder="Quantidade">
+
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <img src="./Imagens/bebidas.png">
+                    <span class="bebida">Bebida</span>
+                    <div>
+                        <input id="qtdBebida" name="qtdBebida" placeholder="Quantidade">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,301;1,301&display=swap');
+
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'merienda', 'cursive';
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 16px;
+  background-color: #eeeeee;
+}
+
+/* Estilo da container principal */
+.container {
+  background-color: #fff;
+  text-align: center;
+  width: 70%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #aaaa;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Títulos */
+.container h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center;
+  color: #a93c96;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 20px;
+  color: #A93C96;
+}
+
+/* Flexbox para a parte de logo e título */
+.container-logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo img {
+  width: 100px; /* Define um tamanho menor */
+  height: auto; /* Mantém a proporção */
+  max-width: 100%; /* Impede que fique maior que o contêiner */
+}
+
+/*Textos h3*/
+
+.texto h3 {
+  font-size: 14px; /* Reduz o tamanho */
+  line-height: 1.4; /* Melhora a legibilidade */
+  max-width: 90%; /* Evita que fique muito largo */
+  margin: 10px auto; /* Ajusta o espaçamento */
+}
+
+/* Grupo de inputs (criancas e adultos) */
+.grupo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
+
+.grupo label span {
+  font-size: 18px !important;
+}
+
+
+/* Cardápio */
+.cardapio {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.principal-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.principal-card .card-body span{
+  font-size: 18px !important;
+}
+
+.cardapio-texto h3 {
+  font-size: 14px; /* Reduz o tamanho */
+  text-align: center;
+  width: 100%; /* Garante que não fique muito largo */
+  line-height: 1.4; /* Melhora a legibilidade */
+}
+
+
+/* Card-body (os quadrados com as imagens) */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  width: 120px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card-body img {
+  width: 80%;
+  height: 100px;
+  object-fit: contain;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-body input {
+  width: 80%;
+  padding: 5px;
+  font-size: 14px;
+  border: 2px solid #a93c96;
+  border-radius: 6px;
+}
+
+
+
+
+
+/* Media Queries para responsividade */
+
+/* Para telas pequenas (celulares e tablets) */
+@media (max-width: 768px) {
+  body {
+      font-size: 18px; /* Ajusta o tamanho da fonte */
+      flex-direction: column; /* Alinha os itens na vertical */
+  }
+
+  .container {
+      width: 90%; /* Aumenta a largura da container para telas menores */
+  }
+
+  .container h1 {
+      font-size: 24px; /* Ajusta o tamanho do título */
+  }
+
+  .container h2 {
+      font-size: 18px; /* Ajusta o tamanho do título secundário */
+  }
+
+  @media screen and (max-width: 768px) {
+    .texto h3 {
+        font-size: 12px;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+}
+
+
+  /* Ajusta a disposição do grupo de inputs */
+  .grupo {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+
+
+/* Cardápio */
+@media (max-width: 768px) {
+  .cardapio {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centraliza os elementos horizontalmente */
+      justify-content: center; /* Centraliza verticalmente (se necessário) */
+      text-align: center; /* Garante que o texto fique centralizado */
+      width: 100%; /* Faz a div ocupar toda a largura disponível */
+  }
+
+  .principal-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centraliza os cards */
+      gap: 20px; /* Ajusta o espaçamento entre os itens */
+  }
+
+  .card-body {
+      width: 100%; /* Faz com que os cards ocupem toda a largura disponível */
+      max-width: 200px; /* Define um tamanho máximo para os cards */
+  }
+}
+
+
+  .card-body img {
+      height: 80px; /* Ajusta o tamanho das imagens */
+  }
+
+  .card-body input {
+      width: 90%; /* Ajusta a largura dos inputs */
+  }
+}
+
+
+
+
+
+
+/* Para telas muito pequenas (celulares verticais) */
+@media (max-width: 480px) {
+  body {
+      font-size: 16px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .logo img {
+        width: 80px; /* Reduz ainda mais o tamanho para telas pequenas */
+    }
+}
+
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .container h1 {
+      font-size: 20px;
+  }
+
+  .container h2 {
+      font-size: 16px;
+  }
+
+  .grupo {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .grupo span {
+        font-size: 10px;
+    }
+}
+
+  .cardapio {
+      font-size: 14px; /* Ajusta o tamanho da fonte do cardápio */
+  }
+
+  @media screen and (max-width: 768px) {
+    .cardapio-texto h3 {
+        font-size: 12px; /* Menor em telas pequenas */
+    }
+}
+
+  .principal-card {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .card-body {
+      width: 100%; /* Garante que os cards ocupem toda a largura */
+      max-width: 150px; /* Limita o tamanho dos cards */
+  }
+
+  .card-body img {
+      height: 70px; /* Ajusta o tamanho das imagens */
+  }
+
+  .card-body input {
+      width: 90%; /* Ajusta a largura dos inputs */
+  }
+}
+
+
+
+
+
+
+
+
+  
